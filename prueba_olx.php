@@ -70,8 +70,8 @@ $image = $doc->getElementsByTagName('img');
 foreach ($image as $img) {
     $imageExt = $img->getAttribute('src').' | '.$img->nodeValue;
 
-    $porciones = explode("|", $imageExt);
-    echo "<img class='img' src='".$porciones[0]."'>";
+    $imgExplode = explode("|", $imageExt);
+    echo "<img class='img' src='".$imgExplode[0]."'>";
     break;
 }
 echo '</div>';
